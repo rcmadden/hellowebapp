@@ -1,0 +1,12 @@
+To run django server on cloud 9 use this command:
+
+python3 manage.py runserver $IP:$PORT
+
+all code in the book can be found on our GitHub code repository (change chapters by clicking the “branch” button): http:// hellowebapp.com/ 9
+
+book discussion forum
+http://discuss.hellowebapp.com/
+
+
+tips and resources
+https://github.com/hellowebapp/hellowebapp
