@@ -5,7 +5,7 @@
 
 {% block content %}
     <h1>Edit "{{ thing.name }}"</h1>
-    <form role="form" action="" method="postss"
+    <form role="form" action="" method="POST">
         {% csrf_token %}
         {{ form.as_p }}
         <button type="submit">Submit</button>
