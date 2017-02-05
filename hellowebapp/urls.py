@@ -17,6 +17,7 @@ from django.conf.urls import url, include
 from django.contrib import admin
 from django.views.generic import TemplateView
 from collection import views
+
 # http://stackoverflow.com/questions/29635765/django-1-9-deprecation-warnings-app-label
 urlpatterns = [
     url(r'^$', views.index, name='home'),

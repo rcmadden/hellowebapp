@@ -33,13 +33,16 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     'collection',
     'django.contrib.admin',
+    'django.contrib.sites',
+    'registration', #should be immediately above 'django.contrib.auth'
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.humanize',
-    'registration',
+    
+    
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -127,10 +130,10 @@ ACCOUNT_ACTIVATION_DAYS = 7
 # output emails to console set up in mailchimp/mandrill or sendgrid
 LOGIN_REDIRECT_URL = "home"
 
-EMAIL_BACKEND = 'django.core.mail.backens.console.EmailBackend' 
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend' 
 DEFAULT_FROM_EMAIL = 'testing@example.com'
 EMAIL_HOST_USER = ''
 EMAIL_HOST_PASSWORD = ''
 EMAIL_USE_TLS = False 
-EMAIL_PORT = 1026
+EMAIL_PORT = 1025
 
