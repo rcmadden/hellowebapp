@@ -33,13 +33,12 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     'collection',
     'django.contrib.admin',
-    'django.contrib.sites',
-    'registration', #should be immediately above 'django.contrib.auth'
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'registration',
     'django.contrib.humanize',
     
     
@@ -127,13 +126,13 @@ USE_TZ = True
 STATIC_URL = '/static/'
 # required for registration-redux
 ACCOUNT_ACTIVATION_DAYS = 7
-# output emails to console set up in mailchimp/mandrill or sendgrid
-LOGIN_REDIRECT_URL = "home"
 
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend' 
-DEFAULT_FROM_EMAIL = 'testing@example.com'
-EMAIL_HOST_USER = ''
-EMAIL_HOST_PASSWORD = ''
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+DEFAULT_FROM_EMAIL = 'testing@example.com' 
+EMAIL_HOST_USER = '' 
+EMAIL_HOST_PASSWORD = '' 
 EMAIL_USE_TLS = False 
 EMAIL_PORT = 1025
+
+LOGIN_REDIRECT_URL = "home"
 
